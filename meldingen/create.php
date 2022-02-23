@@ -17,7 +17,7 @@
         
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>
-                <input type="text" name="attractie" id="attractie" class="form-input">
+                <input type="text" name="attractie" id="attractie" class="form-input" required>
             </div>
             <div class="form-group">
                     <label for="type_">Type</label>
@@ -35,15 +35,15 @@
             </div>
             <div class="form-group">
                 <label for="capaciteit">Capaciteit p/uur:</label>
-                <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
+                <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input" required>
             </div>
             <div class="form-group">
                 <label for="melder">Naam melder:</label>
-                <input type="text" name="melder" id="melder" class="form-input">
+                <input type="text" name="melder" id="melder" class="form-input" required>
             </div>
             <div class="form-group">
                 <label for="overigemelder">Overige melding</label>
-                <textarea name="overigmelder"id="overigmelder"class="form-input"cols="50"rows="4"></textarea>
+                <textarea name="overigemelder" id="overigemelder" class="form-input" cols="50" rows="4"></textarea>
             </div>
             
             <input type="submit" value="Verstuur melding">
