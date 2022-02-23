@@ -20,8 +20,8 @@
                 <input type="text" name="attractie" id="attractie" class="form-input">
             </div>
             <div class="form-group">
-                    <label for="type">Type</label>
-                    <select name="type" id="type">
+                    <label for="type_">Type</label>
+                    <select name="type_" id="type">
                         <option value="- kies een type -">- kies een type -</option>
                         <option value="Achtbaan">Achtbaan</option>
                         <option value="Draaiende attractie">Draaiende attractie</option>
