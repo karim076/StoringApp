@@ -22,7 +22,7 @@
             <div class="form-group">
                     <label for="type_">Type</label>
                     <select name="type_" id="type">
-                        <option value="- kies een type -">- kies een type -</option>
+                        <option >- kies een type -</option>
                         <option value="Achtbaan">Achtbaan</option>
                         <option value="Draaiende attractie">Draaiende attractie</option>
                         <option value="Kinderattractie">Kinderattractie</option>
@@ -45,9 +45,15 @@
                 <label for="overigemelder">Overige melding</label>
                 <textarea name="overigemelder" id="overigemelder" class="form-input" cols="50" rows="4"></textarea>
             </div>
-            
+            <div class="form-group">
+                <label for="prioriteit">Prioriteit</label>
+                    <select name="prioriteit" id="prioriteit">
+                        <option>- kies een type -</option>
+                        <option value="1">Ja</option>
+                        <option value="0">Nee</option>
+                    </select>
+            </div>
             <input type="submit" value="Verstuur melding">
-
         </form>
     </div>  
 

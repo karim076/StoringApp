@@ -18,8 +18,51 @@
         {
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
         } ?>
-
-        <div style="height: 300px; background: #ededed; display: flex; justify-content: center; align-items: center; color: #666666;">(hier komen de storingsmeldingen)</div>
+        
+        <?php require_once 'C:\xampp\htdocs\StoringApp\backend\conn.php';
+            $query="SELECT * FROM meldingen";
+            $statement = $conn->prepare($query);
+            $statement->execute();
+            $meldingen = $statement->fetchAll(PDO::FETCH_ASSOC);
+        ?>
+        <?php foreach($meldingen as $item)
+        {
+            if($item['prioriteit'] == 0)
+            {
+                $txt = "Nee!";
+            } else{
+                $txt = "Ja";
+            }
+        }
+        ?>
+        <table>
+            <tr>
+                <th>Attractue</th>
+                <th>Type</th>
+                <th>Melder</th>
+                <th>Overige info</th>
+                <th>Prioriteit</th>
+            </tr>
+            <?php foreach($meldingen as $item):?>
+                <tr>
+                    <td><?php echo $item['attractie']; ?></td>
+                    <td><?php echo $item['type_']; ?></td>
+                    <td><?php echo $item['melder']; ?></td>
+                    <td><?php echo $item['overigemelder']; ?></td>
+                    <td><?php 
+                        if($item['prioriteit'] == 0)
+                        {
+                            $txt = "Nee";
+                        } else{
+                            $txt = "Ja";
+                        }
+                        echo $txt
+                        ?>
+                    </td>
+                </tr>
+            <?php endforeach;?>
+        </table>
+        </div>
     </div>  
 
 </body>
