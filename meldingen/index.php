@@ -19,7 +19,7 @@
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
         } ?>
         
-        <?php require_once 'C:\xampp\htdocs\StoringApp\backend\conn.php';
+        <?php require_once 'C:\xampp\htdocs\Tweede Periode\H6 StoringApp\backend\conn.php';
             $query="SELECT * FROM meldingen";
             $statement = $conn->prepare($query);
             $statement->execute();
