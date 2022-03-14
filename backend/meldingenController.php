@@ -35,4 +35,4 @@ $statement->execute
     ":prioriteit" => $prioriteit
 ]);
 
-header("Location:../meldingen/index.php?msg=Meldingopgeslagen");
+header("Location: ../index.php");
