@@ -11,7 +11,7 @@ $prioriteit = $_POST['prioriteit'];
 $attractie=$_POST['attractie'];
 if(empty($attractie))
 {
-    $errors[]="Vulde attractie-naamin.";
+    $errors[]="Vulde attractie-naam in.";
 };
 if(!is_numeric($capaciteit))
 {
